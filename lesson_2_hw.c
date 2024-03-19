@@ -36,7 +36,7 @@ int main(void)
 	// printf ("%d - %d = %d", num_1, num_2, diff);
 
 	//Task_4
-
+/*
 	int num_1, num_2, num_3, num_4,  count;
 	float AVG; 
 	printf ("How many numbers are there ? Enter: \n");
@@ -47,7 +47,26 @@ int main(void)
 	printf ("\n");
 	printf (" (%d + %d + %d +%d ) / %d = %.2f ", num_1, num_2, num_3, num_4, count, AVG);
 
+*/
 
+//TASK_4
+	
+printf ("Enter number: \n"); 
+int n, sum; 
+scanf ("%d", &n);
+
+while (n!=0)
+    {
+        sum += n%10;
+        n /= 10;
+}
+printf ("%d", sum);
+
+
+
+
+
+	
 
 
     return 0;
