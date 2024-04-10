@@ -1,0 +1,120 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <limits.h>
+
+//1 Среднее арифметическое 
+
+float AVG(int arr[], int count)
+{
+    float avg=0;
+    for (int i = 0; i < count; i++)
+    {
+        avg += arr[i];
+    }
+    return avg/count;
+}
+
+//2 Минимальное число в массиве
+
+int min_number(int arr[], int count)
+{
+    int min = INT_MAX;
+
+    for (int i = 0; i < count; i++)
+    {
+        if (arr[i]<min)
+            min=arr[i];
+    }   
+    return min;
+}
+
+//3 Сдвиг массива
+
+void intit_aray (int arr[], int size)
+{
+    for (int i = 0; i < size; i++ )
+    {
+        scanf ("%d", &arr[i]);
+    }
+} 
+
+void print_array (int arr[], int size)
+{
+    for (int i = 0; i <  size; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+}
+
+// arr[]={1,2,3,4,5,6,7,8,9,10,11,12}
+
+void shift_aray_right (int arr[], int size)
+{
+
+    for (int j = 0; j <4; j++)
+    {
+        int t = arr[size-1];
+        for (int i = size-2; i >= 0; i--)
+        {
+            arr[i+1] = arr[i];
+        }
+        arr[0] = t;
+
+    }
+}
+
+//4 Сортировка по последнему элементу
+
+
+
+
+
+int main(int argc, char const *argv[])
+{
+
+// Task_1 Среднее арифметическое 
+
+// enum {len = 5};
+// int arr[len];
+
+//     printf ("Enter massive : \n");
+
+//     for (int i = 0; i< len; i++)
+//     {
+//         scanf ("%d", &arr[i]);
+//     }
+
+//     printf("%.3f", AVG(arr, len));
+
+
+// Task_2 Минимальное число в массиве
+
+// enum {len = 5};
+// int arr[len];
+// printf ("Enter massive: \n");
+// for (int i = 0; i< len; i++)
+// {
+//     scanf ("%d", &arr[i]);
+// }
+// printf("%d", min_number(arr, len));
+
+// Task_3 Сдвиг массива на 4 элемента
+
+// int arr[12];
+// int size = 12;
+// intit_aray(arr, size);
+// shift_aray_right(arr, size);
+// print_array(arr, size);
+
+// Task_4
+
+// в разработке
+/*
+нужно использовать сортировку, но сортировать по n/10; 
+пока не изчуил
+*/
+
+
+
+
+}
