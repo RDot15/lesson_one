@@ -76,9 +76,36 @@ fclose(f);
 f = fopen(output, "w");
 fprintf(f, "%s", count);
 fclose(f);
- 
+
+// просто закинул это сюда. к заданию не относится
+    
+/*
+#include <stdio.h>
+#include <string.h>
+
+void func (char *arr)
+{
+    for (int i = 0; i < strlen(arr); i++)
+    {
+        if (arr[i] == ' ')
+        printf ("%s", "");
+        else
+        {
+            printf ("%c", arr[i]);
+        }
+    }
+}
+int main(int argc, char const *argv[])
+{
+
+char *arr = {"   hel lo world my   friend"}; 
+func(arr);
+
+    return 0;
+}
 
 
+ */   
     return 0;
 }
 
