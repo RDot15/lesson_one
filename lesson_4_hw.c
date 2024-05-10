@@ -32,7 +32,15 @@ int main(int argc, char const *argv[])
     // else 
     // printf ("Yes");
     
+    // task_two_4HW
+    //переработанный вариант
     
+    // int a = 723;
+    
+    // if (a/1000 > 0)
+    //     printf("false");
+    // else 
+    // printf("true");
 
     //Task_3
     
@@ -79,6 +87,21 @@ int main(int argc, char const *argv[])
 //	   	 
 //	   }
 
+// task_three_4HW
+// переработка 3 задачи
+    
+// int count = 0;
+// int a = 1624; 
+// while (a > 0)
+// {
+//     if (a % 2 != 0)
+//     count ++;
+//     a/=10;
+// }
+// (count > 0) ? printf ("NO") : printf ("YES");
+
+
+    
  
    // Task_4 
    
