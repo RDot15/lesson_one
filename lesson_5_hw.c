@@ -38,6 +38,27 @@ int numbersSum(int N) {
 }
 
 
+// Task_3 . Сумма цифр равна произведению
+
+int multi_sum (int a)
+{
+    int multi = 1; 
+    int sum = 0;
+
+    while (a > 0)
+    {
+        sum += a % 10; 
+        multi *= a % 10; 
+
+
+        a/= 10;
+    }
+    
+    return (sum == multi); 
+  
+}
+
+
 
 int main(int args, char** argv) {
 
@@ -48,6 +69,11 @@ int N = 100;
     printf("Sum numbers from 1 to %d is = %d\n", N, numbersSum(N));
 
 
+// Task_3
+// int a = 1233;
+// printf("%d ", multi_sum(a));
+
+    
 //Task_2
 
 //  printf("%d\n", NOD(14, 21));
